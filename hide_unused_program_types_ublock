@@ -1,10 +1,11 @@
 When creating an encounter note, you have to choose a Program from a drop down list. 
 Once encounters are entered with a particular Program, that entry in the drop down is permanently present and cannot be removed.
 
-You can use Ublock's filtering mechanics to hide unused program types.
+You can use Ublock's filtering mechanics to hide unused program types. 
+You'll need to use the browser's Devtools to locate the option[value= for the item from the list you want to hide
   
 For ublock lite:
 
 Click the icon, then the gear, custom filters, Import/Export. Paste in: 
 
-<yoursubdomain>.patagoniaemr.com##option[value="77386329-0c2a-45b5-8531-6d0e3847f1be"]
+<yoursubdomain>.patagoniaemr.com##option[value="UUID-of-element-to-hide"]
