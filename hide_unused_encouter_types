@@ -1,0 +1,10 @@
+Use Ublock to hide elements from Encounter Types. These items are hidden based on their position in the list - if the list gets updated, you'll need to update the filter
+
+Use browser's devtools to locate the item to hide. It should look similar to this:
+
+##select#visitTypeDD > option:nth-of-type(5)
+
+Use ublock to create a filter for each item to hide:
+
+<yoursubdomain>.patagoniaemr.com##select#visitTypeDD > option:nth-of-type(5)
+<yoursubdomain>.patagoniaemr.com##select#visitTypeDD > option:nth-of-type(14)
